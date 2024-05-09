@@ -10,7 +10,7 @@ class superdemo
 }
 
 
-class demoblocktypes
+class demotypesblock
 {
     public static void main (String[] args) {
         superdemo sd = new superdemo();

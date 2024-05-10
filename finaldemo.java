@@ -45,7 +45,9 @@ public class finaldemo
 {
     public static void main(String[] sk)
     {
-        superdemo sd = new superdemo();
+        final superdemo sd = new superdemo();
+        superdemo sd2;
+       // sd = sd2; -----shows error ! cannot assign a value to final variable sd-----
         //okaydemo od = new okaydemo();
         //od.disp();
         sd.disp();

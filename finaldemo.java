@@ -1,10 +1,15 @@
 class superdemo
 {
+    // ----final variables----
+    
     final int a = 5;
     final int b;
     static int c;
     final int arr[] = new int[]{1,2,3,4};
     final String str;
+    
+    /*---final method---
+    
     final public void disp()
     {
         arr[2]=8;

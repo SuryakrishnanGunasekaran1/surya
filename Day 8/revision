@@ -1,1 +1,69 @@
+ class scdemo 
+{
+    public void fun1(int x)
+    {
+        int a,b,c;
+        a =15;
+        b=34;
+        c=18;
+        switch(x)
+        {
+            case 1:
+            System.out.println(a>b);
+            break;
+            case 2:
+            System.out.println(c>b);
+            break;
+            case 3:
+            System.out.println(a>c);
+            break;
+            
+
+        }
+    }
+    public void fun2(char x)
+    {
+        switch(x)
+        {
+            
+            case 'a':
+            System.out.println("hi");
+            break;
+            case 'b':
+            System.out.println("hello");
+            break;
+            case 'c':
+            System.out.println("bye");
+            break;
+        }
+    }
+    public void fun3(char y)
+    {
+        switch(y)
+        {
+            
+            case '+':
+            System.out.println(5+6);
+            break;
+            case '*':
+            System.out.println(7*5);
+            break;
+            case '%':
+            System.out.println(2%4);
+            break;
+        }
+    }
+}
+
+public class switchcasedemo {
+   public static void main(String[] args) {
+    scdemo ob1 = new scdemo();
+    scdemo ob2 = new scdemo();
+    scdemo ob3 = new scdemo();
+    ob1.fun1(1);
+    ob2.fun2('a');
+    ob3.fun3('*');
+
+   }   
+}
 

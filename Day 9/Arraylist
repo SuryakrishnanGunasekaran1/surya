@@ -1,1 +1,98 @@
+import java.util.ArrayList;
+//import java.util.Iterator;
+import java.util.Scanner;
 
+
+class arraylistdemo
+{
+    ArrayList<String> name = new ArrayList<String>();
+
+    public void add_data()
+    {
+        name.add("surya");
+        name.add("krishnan");
+        name.add("gunasekaran");
+        name.add("vijay");
+        name.add("ajith");
+        System.out.println("data added");
+    }
+
+    public void set_data()
+    {
+        name.set(4,"rdj");
+        System.out.println("element set to the list");
+        
+    }
+
+    public void get_data()
+    {
+        for(String i : name)
+        System.out.println(i);
+    }
+    public void remove_data()
+    {
+        name.remove("ajith");
+        System.out.println("elements is removed");
+    }
+
+    public void sizedata()
+    {
+       System.out.println("the size of the list - " + name.size());
+    }
+
+    public void clear_data()
+    {
+        name.clear();
+        System.out.println("list cleared");
+    }
+
+    
+
+}
+
+public class Arraylist {
+    public static void main(String[] args) {
+        arraylistdemo ob1 = new arraylistdemo();
+        Scanner s = new Scanner(System.in);
+        int choice;
+        
+        do{
+            
+            System.out.println("______________________");
+            System.out.println("1.add data");
+            System.out.println("2.set data");
+            System.out.println("3.get data");
+            System.out.println("4.remove data");
+            System.out.println("5.size data");
+            System.out.println("6.clear data");
+            System.out.println("7.exit");
+            System.out.println("______________________");
+            System.out.println("enter the choice");
+            choice = s.nextInt();
+            switch(choice)
+            {
+                case 1:
+                ob1.add_data();
+                break;
+                case 2:
+                ob1.set_data();
+                break;
+                case 3:
+                ob1.get_data();
+                break;
+                case 4:
+                ob1.remove_data();
+                break;
+                case 5:
+                ob1.sizedata();
+                break;
+                case 6:
+                ob1.clear_data();
+                break;
+
+            }
+        }while(choice >0 && choice<7);
+       
+    }
+}
+ 

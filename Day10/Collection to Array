@@ -1,1 +1,21 @@
+import java.util.LinkedList;
+
+public class CollectionToArray {
+    public static void main(String[] args) {
+        LinkedList name = new LinkedList<String>();
+        name.add("surya");
+        name.add("prasath");
+        name.add("kripa");
+        name.add("harish");
+
+        String[] sname = new String[name.size()];
+        for(int i=0;i<name.size();i++)
+        {
+            sname[i] = (String)name.get(i);
+        }
+        for(String i : sname)
+        System.out.println(i);
+    }
+    
+}
 

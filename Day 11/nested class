@@ -1,1 +1,31 @@
+class thanjavur
+{
+    String town = "kumbakonam";
+    String area = "thirunageswaran";
+    int pincode = 612204;
+    class kumbakonam
+
+    {
+        String k_area = "pilanchery";
+        String a_street = "new street";
+        void displaydetails()
+        {
+            System.out.println(town);
+            System.out.println(area);
+            System.out.println(pincode);
+            System.out.println(k_area + " " + a_street);
+        }
+
+    }
+}
+
+
+public class nestedclass {
+    public static void main(String[] args) {
+        thanjavur t = new thanjavur();
+        thanjavur.kumbakonam k = t.new kumbakonam();
+        k.displaydetails();
+    }
+    
+}
 

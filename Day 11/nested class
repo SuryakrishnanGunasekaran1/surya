@@ -1,19 +1,19 @@
-class thanjavur
+class SASTRA
 {
-    String town = "kumbakonam";
-    String area = "thirunageswaran";
+    String town = "THANJAVUR";
+    String area = "VALLAM";
     int pincode = 612204;
-    class kumbakonam
+    class SRC
 
     {
-        String k_area = "pilanchery";
-        String a_street = "new street";
+        String C_area = "KUMBAKONAM";
+        String C_street = "MOTHILAL street";
         void displaydetails()
         {
             System.out.println(town);
             System.out.println(area);
             System.out.println(pincode);
-            System.out.println(k_area + " " + a_street);
+            System.out.println(C_area + " " + C_street);
         }
 
     }
@@ -22,10 +22,9 @@ class thanjavur
 
 public class nestedclass {
     public static void main(String[] args) {
-        thanjavur t = new thanjavur();
-        thanjavur.kumbakonam k = t.new kumbakonam();
+        SASTRA t = new SASTRA();
+        SASTRA.SRC k = t.new SRC();
         k.displaydetails();
     }
     
 }
-
